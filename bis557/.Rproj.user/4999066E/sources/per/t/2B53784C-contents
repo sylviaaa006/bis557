@@ -1,0 +1,64 @@
+---
+title: "my-vignette"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{my-vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(bis557)
+```
+
+1. CASL 2.11 Exercises problem number 5.
+Consider the simple regression model with only a scalar x and intercept: $y=β_0 +β_1x$
+Using the explicit formula for the inverse of a 2-by-2 matrix, write down
+the least squares estimators for $\hatβ_0$ and $\hatβ_1$.
+
+![.](/Users/sylvia/Documents/semester 4/BIS 557 Computational Statistics/homework-2/bis557/problem1.jpeg)
+
+4. Section 2.8 of CASL shows that as the numerical stability decreases, statistical errors increase. Reproduce
+the results and then show that using ridge regression can increase numerical stability and decrease
+statistical error.
+```{r}
+set.seed(123)
+n <- 1000; p <- 25
+beta <- c(1, rep(0, p - 1))
+X <- matrix(rnorm(n * p), ncol = p)
+alpha <- 0.001
+X[,1] <- X[,1] * alpha + X[,2] * (1 - alpha)
+#original stability
+svals <- svd(X)$d
+max(svals) / min(svals)
+# original l2 error
+N <- 1e4; l2_errors <- rep(0, N)
+for (k in 1:N) {
+  y <- X %*% beta + rnorm(n)
+  betahat <- solve(crossprod(X), crossprod(X, y))
+  l2_errors[k] <- sqrt(sum((betahat - beta)^2))
+}
+mean(l2_errors)
+
+#ridge stability
+svals2 <- sqrt(svd(t(X) %*% X+0.5*diag(p))$d)
+max(svals2) / min(svals2)
+# ridge l2 error
+N <- 1e4; ridge_errors <- rep(0, N)
+for (k in 1:N) {
+  y <- X %*% beta + rnorm(n)
+  betahat <- solve( crossprod(X) + diag(rep(0.5, ncol(X))) ) %*% t(X) %*% y
+  ridge_errors[k] <- sqrt(sum((betahat - beta)^2))
+}
+mean(ridge_errors)
+```
+
+5.Consider the LASSO penalty, Show that if $|X_j^T Y | ≤ n\lambda$, then $\hatβ_{LASSO}$ must be zero.
+![.](/Users/sylvia/Documents/semester 4/BIS 557 Computational Statistics/homework-2/bis557/problem2.jpeg)

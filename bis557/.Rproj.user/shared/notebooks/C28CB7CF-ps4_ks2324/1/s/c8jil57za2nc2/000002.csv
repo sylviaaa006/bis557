@@ -1,0 +1,4 @@
+"0","prior <- 1/40200"
+"0","post <- likelihood*prior/sum(likelihood*prior)"
+"0","margin_s <- apply(post,2, sum)"
+"0","plot(s,margin_s)"

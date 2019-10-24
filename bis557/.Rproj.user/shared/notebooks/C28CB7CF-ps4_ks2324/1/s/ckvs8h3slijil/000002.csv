@@ -1,0 +1,2 @@
+"0","margin_theta <- apply(post,1, sum)"
+"0","plot(theta,margin_theta)"

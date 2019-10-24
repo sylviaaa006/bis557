@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1571799812102.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3532258856",
+    "id" : "AF47CB3D",
+    "lastKnownWriteTime" : 1571881433,
+    "last_content_update" : 1571881433,
+    "path" : "~/Documents/semester 4/BIS 557 Computational Statistics/homework-2/bis557/R/ridge_regression1.R",
+    "project_path" : "R/ridge_regression1.R",
+    "properties" : {
+        "cursorPosition" : "7,14",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1571881329670.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "455570433",
+    "id" : "AD01263B",
+    "lastKnownWriteTime" : 1571881676,
+    "last_content_update" : 1571881676618,
+    "path" : "~/Documents/semester 4/BIS 557 Computational Statistics/homework-2/bis557/R/best.lambda.R",
+    "project_path" : "R/best.lambda.R",
+    "properties" : {
+        "cursorPosition" : "23,24",
+        "scrollLine" : "7",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

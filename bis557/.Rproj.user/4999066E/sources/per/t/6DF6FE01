@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1571799894974.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "56930654",
+    "id" : "6DF6FE01",
+    "lastKnownWriteTime" : 1571882063,
+    "last_content_update" : 1571882063384,
+    "path" : "~/Documents/semester 4/BIS 557 Computational Statistics/homework-2/bis557/tests/testthat/test_ridge.R",
+    "project_path" : "tests/testthat/test_ridge.R",
+    "properties" : {
+        "cursorPosition" : "8,32",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

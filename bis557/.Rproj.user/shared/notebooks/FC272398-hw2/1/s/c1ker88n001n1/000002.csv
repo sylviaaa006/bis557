@@ -1,0 +1,21 @@
+"0","taxi <- 
+  read_csv(""https://github.com/statsmaths/ml_data/raw/master/nyc_taxi.csv"")
+"
+"2","Parsed with column specification:
+cols(
+  obs_id = [31mcol_character()[39m,
+  train_id = [31mcol_character()[39m,
+  duration = [32mcol_double()[39m,
+  day = [32mcol_double()[39m,
+  hour = [32mcol_double()[39m,
+  minute = [32mcol_double()[39m,
+  weekday = [32mcol_double()[39m,
+  pickup_longitude = [32mcol_double()[39m,
+  pickup_latitude = [32mcol_double()[39m,
+  dropoff_longitude = [32mcol_double()[39m,
+  dropoff_latitude = [32mcol_double()[39m,
+  trip_distance = [32mcol_double()[39m,
+  pickup_NTACode = [31mcol_character()[39m,
+  dropoff_NTACode = [31mcol_character()[39m
+)
+"
